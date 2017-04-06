@@ -1,16 +1,15 @@
 // ==UserScript==
 // @name         Userinfo Cape Tweaks
-// @version      0.2
+// @version      0.2.1
 // @description  Adding capes to userinfo
 // @author       _Rikardo_
 // @include     https://goliath.hypixel.net/userinfo?*
 // @include     https://goliath.hypixel.net/userinfo#*
 // ==/UserScript==
 
-var username = /([A-Za-z0-9_]{1,16})$/.exec($("#columnx > font:first-of-type").text())[1];
-$("<img id='cape' style='margin: 20px;' width='40%' src=" + "http://s.optifine.net/capes/" + username + ".png" + " onerror=this.style.display='none'>").insertAfter("img");
+// REMOVED AS ADDED BY DEFAULT
 
-var version = 0.2;
+var version = 0.21;
 var request = new XMLHttpRequest();
 request.onreadystatechange = function() {
     if (request.readyState == XMLHttpRequest.DONE) {
